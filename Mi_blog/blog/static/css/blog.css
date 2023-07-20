@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 a {
+    color: mediumblue;
+    }
+   
+body {
+    background-color: cornflowerblue;
+}
+
+.centrado {
+    text-align: center;
+    width: 70%;
+    padding: 10px;
+    margin: 10px auto;
+}

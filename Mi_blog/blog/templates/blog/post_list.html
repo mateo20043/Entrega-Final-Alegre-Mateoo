@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Primer Blog en Django</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+    <h1>Mi Primer Blog en Django</h1>
+    <hr>
+    {% for post in posts %}
+    <div>
+    <p class="centrado">published: {{ post.published_date }}</p>
+    <h1 class="centrado"><a href="">{{ post.title }}</a></h1>
+    <p class="centrado">{{ post.text|linebreaksbr }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>
